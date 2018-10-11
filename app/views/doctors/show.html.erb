@@ -1,1 +1,5 @@
-<%= form_for @doctor
+<%= form_for @doctor do |f| %>
+  <% @doctor.appointments.each do |appt| %>
+    <%= link_to appt.patient patient_path(appt.patient)%>
+  <% end %>
+<% end %>
