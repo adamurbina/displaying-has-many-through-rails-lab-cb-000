@@ -1,0 +1,4 @@
+<%= form_for @appointment do |f| %>
+  <%= f.label :doctor %>: <%= @appointment.doctor.name %><br>
+  <%= f.label :patient %>: <%= @appointment.patient.name %>
+<% end %>
