@@ -1,5 +1,5 @@
 <%= form_for @patient do |f| %>
   <% @patient.appointments.each do |appt| %>
-    <%= appt.doctor.name %>: <% appt.appointment_datetime.
+    <%= appt.doctor.name %>: <% appt.appointment_datetime.strftime("%B %d, %Y at %H:%M") %>
   <% end %>
 <% end %>
