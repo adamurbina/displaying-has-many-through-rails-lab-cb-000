@@ -1,4 +1,4 @@
 <%= form_for @appointment do |f| %>
-  <%= f.label :doctor %>: <%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %><br>
+  <%= f.label :doctor %>: <%= link_to @appointment.doctor.name, doctor_path(@appointment) %><br>
   <%= f.label :patient %>: <%= link_to @appointment.patient.name, patient_path(@appointment) %>
 <% end %>
